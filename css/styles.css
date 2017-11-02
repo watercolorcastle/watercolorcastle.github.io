@@ -737,6 +737,8 @@ p {
     line-height: 0;
     margin: 0.1rem;
     padding: 0.8rem; }
+  p.disabled {
+    color: #9b9b9b; }
 
 span {
   font-size: 1.4rem; }
@@ -779,11 +781,18 @@ a {
 .columns {
   padding: 0; }
 
+.sidebar {
+  background: white;
+  padding: 2rem 0 0 2rem; }
+
 .orderform {
-  padding: 24px;
+  padding: 2rem 0 0 2rem;
+  border-left: 1px solid #ededed;
   background: white; }
 
 .preview {
+  padding: 2rem 0 0 2rem;
+  border-left: 1px solid #ededed;
   background: white;
   width: 56rem;
   height: 56rem; }

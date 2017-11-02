@@ -13,32 +13,30 @@
 <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
 </head>
 <body>
-<!--navigation-->
-<div class="navigation">
-<a class="navitem1" href="../index.html"><p>BACK TO HOME</p></a>
-<div class="logo"><a href="index.html"><img src="../images/logo.png" height="80px"></a></div>
-<a class="navitem2" href="../index.html"><p>CONTACT US</p></a>
-
-</div>
-<br><br>
-<br>
-<br>
-<br>
-
-<br>
-<br>
-<br>
 <div class="portraits_wrapper">
+	<a class="navitem1" href="../index.html"><p>BACK TO HOME</p></a>
+	<br>
+	<br>
+	<br>
+
+
 <div class="columns">
 
 <!-- radio button 1 -->
-	<div class="column is-3 is-offset-2">
-	
-			<div class="orderform" align="center">
+	<div class="column is-1 is-offset-1 sidebar" >
+		<h2>ORDER</h2>
+		<br>
+		<p class="disabled">BASE</p>
+		<p>CUSTOMIZE</p>
+		<p class="disabled">PAYMENT</p>
+		
+	</div>
+	<div class="column is-3 orderform">
 				<!-- 	title -->
-				<h2>-</h2><h1 class="black">Order Form</h1>
-				<br>
-				<p class="step">Choose Layout</p>
+				<h2>SELECT</h2>
+
+	
+				<p class="step">STYLE</p>
 				<br>
 				<!-- radio buttons -->
 				<input type="radio" name="layout" onclick="display()">
@@ -48,15 +46,17 @@
 			
 			
 				<!-- add text -->
-				<p class="step">Add Text</p><br>
+
+				<p class="step">TITLE</p><br>
 
 				
 				<input type="text" value="Title here"><br>
 				<input type="text" value="Date(Optional)"><br>
 	
 				<button id="submitText" onclick="addTitle()">ADD TEXT</button>
+				<br>
 				<button id="clearText"onclick="clearTitle()">clear</button>
-			</div>
+				<br>		
 	</div>
 
 <br>
@@ -66,8 +66,8 @@
 
 
 <!-- 	thumnail picture -->
-	<div class="column is-5">
-		<div class="preview" align="center">
+	<div class="column is-6 preview" align="center">
+			<h2>PREVIEW</h2>
 			
 			<img id="thumbnail" src="../images/thumbnail.png" alt="">
 			<br><br><br><br>
@@ -76,19 +76,19 @@
 					<p class="title" id="text"> </p><br>
 					<p class="title" id="text2"> </p>
 				</div>
-
 			</div>
-		</div>
-	</div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-</div>
 
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<br>
+	
 
 <script>
 	//radio button

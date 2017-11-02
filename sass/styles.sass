@@ -1,0 +1,303 @@
+//import
+@import "../bulma/sass/utilities/_all"
+@import "../bulma/sass/grid/_all"
+//colors
+$alabaster: #fafafa
+$color_gallery_approx: #ededed
+$white: #ffffff
+$black: black
+$color_star_dust_approx: #9b9b9b
+$color_concrete_approx: #f3f3f3
+$color_cape_cod_approx: #434343
+$textgrey: #F7F6F6
+
+//fonts
+$font_1: Roboto
+$font_2: Inconsolata
+
+//fontsizes
+$base-size: 10px
+
+$url_1: url(product/process.png)
+
+html
+	font-size: $base-size
+	font-family: $font_2
+
+
+body 
+	margin: 0
+	padding: 0
+	overflow-x: hidden
+	&::-webkit-scrollbar 
+		display: none
+
+.navigation 
+	z-index: 1
+	background-color: $alabaster
+	width: 100%
+	height: 96px
+	position: fixed
+	top: 0
+	left: 0
+	display: flex
+	flex-flow: row nowrap
+	align-items: center
+
+	.navitem1 
+		margin-right: auto
+		text-align: left
+		padding-left: 2.4rem
+		text-decoration: none
+		font-size: 1.2rem
+	.logo 
+		flex-basis: 20rem
+		text-align: center
+	.navitem2 
+		margin-left: auto
+		text-align: right
+		padding-right: 2.4rem
+		text-decoration: none
+		font-size: 1.2rem
+
+//top panel
+.toppanel_container 
+	width: 100%
+	height: 800px
+	background: url(../images/toppanelbg.png) center
+	background-size: cover
+	position: relative
+	display: flex
+	.toppanel_text_container 
+		margin: auto
+		text-align: center
+
+
+.portraits_wrapper 
+	background-color: $color_gallery_approx
+	padding: 2.4rem 1.6rem
+
+.pricing_wrapper 
+	background-color: $white
+	width: 100%
+
+.process_wrapper 
+	background-color: $white
+	padding: 2.4rem 1.6rem
+
+.wedding_wrapper 
+	width: 100%
+	background: url(../images/leaves2.png)center
+	background-size: cover
+	background-repeat: no-repeat
+
+.print_wrapper 
+	width: 100%
+	background: url(../images/pricing/print.png)center
+	background-size: cover
+	background-repeat: no-repeat
+
+
+.story_wrapper 
+	width: 100%
+	height: 700px
+	background: url(../images/process.png)center
+	background-size: cover
+	background-position: 0 12rem
+	position: relative
+
+.flex_container 
+	display: flex
+	margin: 0
+	flex-flow: row wrap
+	align-items: top
+	justify-content: center
+	text-align: center
+
+
+.flex_item 
+	flex-basis: 40rem
+	margin: 2rem
+
+
+.button_container 
+	z-index: 2
+	width: 100%
+	position: fixed
+	bottom: 96px
+
+.button 
+	background-color: $black
+	padding: 4px 16px
+	color: $white
+	text-align: center
+	line-height: 46px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 36px
+	height: 40px
+	width: 120px
+	margin: 0 auto
+
+	&:hover 
+		background-color: $color_star_dust_approx
+		//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.4s
+
+
+// text styles
+
+h1 
+	font-family: $font_1
+	font-weight: normal
+	letter-spacing: 2.4px
+	text-decoration: none
+	cursor: pointer
+	margin: 0
+	padding: 0
+	&.black
+		color: $black
+		font-size: 6.0rem
+		line-height: 6.4rem
+	&.white
+		color: $white
+		font-size: 7.2rem
+		line-height: 8.4rem
+
+h2 
+	font-family: $font_1
+	color: $black
+	font-weight: 400
+	font-size: 1.2rem
+	line-height: 15px
+	letter-spacing: 2px
+	text-decoration: none
+
+h3 
+	font-family: $font_1
+	color: $white
+	font-weight: bold
+	font-size: 11px
+	line-height: 18px
+	letter-spacing: 1px
+	text-decoration: none
+
+
+p 
+	font-family: $font_2
+	color: $black
+	font-weight: normal
+	font-size: 1.4rem
+	line-height: 2.4rem
+	letter-spacing: 0.05rem
+	
+	&.step
+		padding: 1rem 0
+		margin: 2rem 0
+		border-bottom: 0.1rem solid $black
+		color: $black
+		display: inline-block
+	&.price
+		text-align: center
+	&.title
+		line-height: 0
+		margin: 0.1rem
+		padding: 0.8rem
+		// background: $textgrey
+	
+
+
+
+span
+	font-size: 1.4rem
+
+
+a 
+	cursor: pointer
+	transition: 0.3s
+	text-decoration: none
+
+	&:link 
+		color: $black
+		opacity: 1.0
+		text-decoration: none
+
+	&:visited 
+		color: $black
+		opacity: 1.0
+		text-decoration: none
+
+	&:hover 
+		color: $black
+		opacity: 0.9
+		text-decoration: none
+		//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: 0.3s
+		//If you use compass, instead of the line below you could use + transition-timing-function($function-1, $function-2, $function-3, $function-4, $function-5, $function-6, $function-7, $function-8, $function-9, $function-10)
+		transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1)
+
+	&:active 
+		color: $black
+		text-decoration: none
+
+
+//on order form 
+#thumbnail
+	//default
+	margin-top: 8rem
+	width: 32rem
+	height: 32rem
+	&.circle
+		width: 32rem
+		height: 32rem
+		border-radius: 24rem
+		transition: 0.3s
+	&.square
+		width: 32rem
+		height: 32rem
+
+
+//box grid containers
+.columns
+	// background: blue
+	padding: 0
+.column
+	// padding: 16px
+
+.orderform
+	padding: 24px
+	background: white
+.preview
+	background: white
+	width: 56rem
+	height: 56rem
+
+
+//input style
+input[Type=text]
+	width: 16rem
+	height: 3rem
+	margin-bottom: 1rem
+
+//button style
+button
+	cursor: pointer
+#submitText
+	background: black
+	color: white
+	font-size: 1.4rem
+	border: black
+	box-shadow: none
+	width: 16.5rem
+	height: 3rem
+#clearText
+	background: none
+	color: black
+	font-size: 1.4rem
+	border: black
+	box-shadow: none
+	width: 16.5rem
+	height: 3rem
+	text-decoration: underline
+
+
+

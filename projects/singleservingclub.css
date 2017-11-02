@@ -1,0 +1,88 @@
+/* this is a test project for the nav bar*/
+
+.html{background-color: green;}
+.body{padding:32px;}
+.header{margin-top:96px;}
+.flex-container{
+  margin: 40px 56px 0px 56px;
+  padding:56px;
+  width:auto;
+  border: 1px solid #ededed;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+
+}
+.flex-item_1 {width:auto;}
+.flex-item_2 {width:160px;}
+.flex-item_3 {width:400px;}
+
+
+.nav{width:100%;}
+
+p{
+  font-family: 'Inconsolata', monospace;
+  font-size: 12px;
+  font-weight: normal;
+line-height: 16px;
+letter-spacing: 0.8px;
+color: #434343
+}
+h2
+{  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
+  font-weight: normal;
+line-height: 32px;
+letter-spacing: 1px;
+color: #434343}
+
+
+
+/* input styles*/
+input{
+  height:auto;
+  padding:8px;
+}
+
+
+#submit{
+  background-color: #434343;
+  color: #ffffff;
+  padding: 8px;
+
+
+}
+
+
+
+
+/* unvisited link */
+a:link {
+    color: #4343434; opacity: 0.8;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #434343; opacity: 0.8;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #ffffff;opacity: 1.0;
+    background-color: #434343;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+    transition-timing-function: cubic-bezier(0.25, 1, 0.25, 1);
+
+
+
+}
+
+/* selected link */
+a:active {
+    color: #434343;
+    text-decoration: none;
+}

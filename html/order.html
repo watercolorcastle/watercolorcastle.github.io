@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order a custom portrait</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="custom portraits, wedding, family, chidlren">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="images/favcon.ico" type="image/x-icon">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" rel="stylesheet"/>
+<!--main stylesheet-->
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<body>
+<!--navigation-->
+<div class="navigation">
+<a class="navitem1" href="../index.html"><p>BACK TO HOME</p></a>
+<div class="logo"><a href="index.html"><img src="../images/logo.png" height="80px"></a></div>
+<a class="navitem2" href="../index.html"><p>CONTACT US</p></a>
+
+</div>
+<br><br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+<div class="portraits_wrapper">
+<div class="columns">
+
+<!-- radio button 1 -->
+	<div class="column is-3 is-offset-2">
+	
+			<div class="orderform" align="center">
+				<!-- 	title -->
+				<h2>-</h2><h1 class="black">Order Form</h1>
+				<br>
+				<p class="step">Choose Layout</p>
+				<br>
+				<!-- radio buttons -->
+				<input type="radio" name="layout" onclick="display()">
+				<span>Circle</span>
+				<input type="radio" name="layout" onclick="display()" checked>
+				<span>Square</span><br>
+			
+			
+				<!-- add text -->
+				<p class="step">Add Text</p><br>
+
+				
+				<input type="text" value="Title here"><br>
+				<input type="text" value="Date(Optional)"><br>
+	
+				<button id="submitText" onclick="addTitle()">ADD TEXT</button>
+				<button id="clearText"onclick="clearTitle()">clear</button>
+			</div>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- 	thumnail picture -->
+	<div class="column is-5">
+		<div class="preview" align="center">
+			
+			<img id="thumbnail" src="../images/thumbnail.png" alt="">
+			<br><br><br><br>
+			<div class="columns">
+				<div class="column is-4 is-offset-4">
+					<p class="title" id="text"> </p><br>
+					<p class="title" id="text2"> </p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+
+
+<script>
+	//radio button
+	var input=document.getElementsByTagName('input');
+	//where picture frame appears
+	var thumbnail = document.getElementById('thumbnail');
+	//text area for displaying information
+	var text = document.getElementById('text');
+	var text2 = document.getElementById('text2');
+	//different sizes
+	var sizes =['circle', 'square'];
+	//submit text button
+	var submitText = document.getElementById('submitText');
+
+	//switch thumbnail layout onclick 
+	function display(){
+		
+		if (input[0].checked){
+			thumbnail.className=sizes[0];
+		}
+		else {
+			thumbnail.className=sizes[1];
+		}
+	};
+	//change text to input value onclick 
+	function addTitle(){
+		text.innerHTML = input[2].value;
+		text2.innerHTML = input[3].value;
+
+	}
+	//clear text
+	function clearTitle(){
+		text.innerHTML = "";
+		text2.innerHTML = "";
+
+	}
+	
+	
+
+</script>
+
+</body>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <title>add recipe</title>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="singleservingclub.css">
+    <!--Import jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="nav.js"></script>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   </head>
+
+   <body>
+     <!--nav-->
+     <div class="nav">
+     <div class="header"><p align="center"><a>SINGLE SERVING CLUB</a></p></div>
+     <div class="nav-items">
+       <p align="center" id="close"><a>x</a></p>
+       <a href="http://vaudevilleventures.github.io/"><p align="center">about</p></a>
+       <a href="http://vaudevilleventures.github.io/aboutus"><p align="center">by ling zhou</p></a>
+       <a href="http://vaudevilleventures.github.io/"><p align="center">contribute</p></a>
+
+     </div>
+    </div>
+
+     <!--form-->
+     <div class="flex-container">
+       <div class="flex-item_1"><div class="recipeimage"><img src="1.png" height="240px"></div></div>
+         <div class="flex-item_2"></div> <!--just a spacer-->
+       <div class="flex-item_3">
+         <form action="/action_page.php">
+          <p>Recipe name:</p>
+          <input type="text" name="RecipeName" value="enter name here"><br>
+          <p>Step1</p>
+          <input type="text" name="Step1" value="first step"><br>
+          <br>
+        <input id="submit" type="submit" value="Submit Recipe">
+         </div>
+          </form>
+<!--vote for emoji-->
+<form action="#0" id="voting-form" class="voting-form">
+  <h1>Which of these emojis is your favorite?</h1>
+  <div>
+    <select name="emoji_choice" id="emoji_choice">
+      <option value="recipe1">recipe1</option>
+      <option value="receipe2">recipe2</option>
+      <option value="recipe3">recipe3</option>
+      <option value="recipe4">recipe4</option>
+    </select>
+  </div>
+
+  <div>
+    <input type="submit" value="Vote">
+  </div>
+
+</form>
+
+
+
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </body>
+ </html>
